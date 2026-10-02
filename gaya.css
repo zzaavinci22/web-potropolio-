@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #070b18;
+    color: white;
+}
+
+/* NAVBAR */
+header {
+    background: #0b1024;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav h2 span {
+    color: #00c8ff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00c8ff;
+}
+
+/* HERO */
+.hero-section {
+    min-height: 90vh;
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small {
+    color: #00c8ff;
+    letter-spacing: 32px;
+    margin-bottom: 15px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    line-height: 1.1;
+}
+
+.hero-text h1 span {
+    color: #00c8ff;
+}
+
+.hero-text p {
+    line-height: 1.7;
+    color: #b8c0d9;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #00c8ff;
+    color: #06101b;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px #00c8ff;
+}
+
+/* HERO CARD */
+.hero-card {
+    width: 320px;
+    height: 400px;
+    border: 1px solid #00c8ff;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #111936, #07101e);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 35px rgba(0, 200, 255, 0.2);
+}
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    background-image: url("ml.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: 0 0 40px #00c8ff;
+    margin-bottom: 30px;
+}
+
+.hero-card h2 {
+    font-size: 45px;
+    color: #00c8ff;
+}
+
+.hero-card p {
+    color: #aeb8d0;
+    margin-top: 10px;
+}
+
+/* ABOUT */
+.about {
+    padding: 80px 20px;
+    text-align: center;
+    background: #0b1024;
+}
+
+.about h2,
+.heroes h2,
+.contact h2 {
+    font-size: 35px;
+    color: #00c8ff;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+    color: #c1c8dc;
+}
+
+/* HEROES */
+.heroes {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-container {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.hero-box {
+    width: 280px;
+    padding: 30px 20px;
+    background: #10172e;
+    border: 1px solid #1e355a;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.hero-box:hover {
+    transform: translateY(-10px);
+    border-color: #00c8ff;
+    box-shadow: 0 10px 30px rgba(0, 200, 255, 0.2);
+}
+
+.hero-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero-box h3 {
+    font-size: 24px;
+    color: #00c8ff;
+}
+
+.hero-box p {
+    color: #b7bfd3;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* CONTACT */
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+    background: #0b1024;
+}
+
+.contact > p {
+    color: #b7bfd3;
+}
+
+.contact-info {
+    margin-top: 25px;
+    line-height: 2;
+    color: #d5dbea;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #050811;
+    color: #7f8aa5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 750px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .hero-card {
+        width: 280px;
+        height: 350px;
+    }
+}
